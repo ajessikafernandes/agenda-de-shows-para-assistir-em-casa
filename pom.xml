@@ -15,7 +15,7 @@
 	<description>Os shows são transmitidos ao vivo através das redes sociais através de lives.</description>
 
 	<properties>
-		<java.version>11</java.version>
+		<java.version>1.8</java.version>
 	</properties>
 
 	<dependencies>
