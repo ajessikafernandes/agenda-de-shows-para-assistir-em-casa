@@ -42,7 +42,7 @@ public class LiveService {
             return repositoryQuery.findByLiveDateAfterOrderByLiveDateAsc(LocalDateTime.now(), pageable);
         }else if(flag != null && flag.equals("previous")){
             return repositoryQuery.findByLiveDateBeforeOrderByLiveDateDesc(LocalDateTime.now(), pageable);
-        }else if(flag.isBlank()){
+        }else if(flag.isEmpty()){
             throw new ErroAoListarLivesException("Sua pesquisa não corresponde a nenhum resultado");
         } else{
             return repository.findAll(pageable);
