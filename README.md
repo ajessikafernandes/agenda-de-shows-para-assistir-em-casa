@@ -2,25 +2,25 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/ajessikafernandes/agenda-de-shows-para-assistir-em-casa/blob/main/LICENSE)
 
-
-
 A aplicação foi criada com o intuito de mostrar em tempo real os shows  que estão sendo transmitidos ao vivo nas redes sociais através de lives.
 
-#Tecnologias utilizadas
+# Tecnologias utilizadas
 ## Back end
 - Java 11
 - Spring Boot
 - JPA / Hibernate
 - Maven
 
-##Front end
+## Front end
 - Angular 9
 - TypeScript
 
-#Implantação em produção
+## Modelo conceitual
+![Modelo Conceitual Live](https://github.com/ajessikafernandes/agenda-de-shows-para-assistir-em-casa/blob/develop/assets/Modelo%20conceitual%20-%20Live.jpeg)
+# Implantação em produção
 - Back end: Heroku
 
-#Como executar o projeto
+# Como executar o projeto
 
 ## Back end
 ### Pré-requisitos:
