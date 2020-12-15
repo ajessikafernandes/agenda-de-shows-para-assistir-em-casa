@@ -1,0 +1,161 @@
+{
+	"info": {
+		"_postman_id": "fb477f22-df04-437d-bf48-7a0ed11fb420",
+		"name": "API de lives",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Adicionar live",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"data\": null,\r\n    \"horario\": null,\r\n    \"titulo\": \"LIVE: Leitura Conjunta Mrs. Dalloway: primeira metade!\",\r\n    \"descricao\": \"No dia 19/07, às 19h, nos encontraremos para bater um papo sobre o que achamos da leitura de  Mrs. Dalloway até o momento (primeira metade).\",\r\n    \"linkLive\": \"https://www.youtube.com/watch?v=G-anx00IYjo&ab_channel=Literature-se\",\r\n    \"genero\": \"Leitura\",\r\n    \"linkCanal\": \"https://www.youtube.com/channel/UCS3qz49phk9d9fnEcTPVbcg\",\r\n    \"linkInstagram\": \"https://www.instagram.com/blogliteraturese/\"\r\n}"
+				},
+				"url": {
+					"raw": "localhost:4200/lives",
+					"host": [
+						"localhost"
+					],
+					"port": "4200",
+					"path": [
+						"lives"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Lives",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:4200/lives",
+					"host": [
+						"localhost"
+					],
+					"port": "4200",
+					"path": [
+						"lives"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar dados de live por id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "id",
+						"value": "1",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:4200/lives/info",
+					"host": [
+						"localhost"
+					],
+					"port": "4200",
+					"path": [
+						"lives",
+						"info"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizar dados de uma live por id",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "id",
+						"value": "1",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"data\": null,\r\n    \"horario\": null,\r\n    \"titulo\": \"ELE NASCEU! - Vlogging no Hospital. Meu Corpo Pós Parto!\",\r\n    \"descricao\": \"Gente linda tudo bem? O Colt finalmente nasceu depois de 9 horas de trabalho de parto e 1 hora empurrando ele! Não consegui filmar muito, mas consegui gravar vlog no quarto do hospital…\",\r\n    \"linkLive\": \"https://www.youtube.com/watch?v=N4atRZI2394&ab_channel=GleiceMiranda\",\r\n    \"genero\": \"rock\",\r\n    \"linkCanal\": null,\r\n    \"linkInstagram\": null\r\n}"
+				},
+				"url": {
+					"raw": "localhost:4200/lives",
+					"host": [
+						"localhost"
+					],
+					"port": "4200",
+					"path": [
+						"lives"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar live por id",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "id",
+						"value": "1",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:4200/lives",
+					"host": [
+						"localhost"
+					],
+					"port": "4200",
+					"path": [
+						"lives"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
