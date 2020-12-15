@@ -1,8 +1,29 @@
-# Api para agenda de shows para assistir em casa
+# Api de agenda de shows para assistir em casa
 
-Os shows são transmitidos ao vivo através das redes sociais através de lives.
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/ajessikafernandes/agenda-de-shows-para-assistir-em-casa/blob/main/LICENSE)
 
-# Pré-requisitos:
+
+
+A aplicação foi criada com o intuito de mostrar em tempo real os shows  que estão sendo transmitidos ao vivo nas redes sociais através de lives.
+
+#Tecnologias utilizadas
+## Back end
+- Java 11
+- Spring Boot
+- JPA / Hibernate
+- Maven
+
+##Front end
+- Angular 9
+- TypeScript
+
+#Implantação em produção
+- Back end: Heroku
+
+#Como executar o projeto
+
+## Back end
+### Pré-requisitos:
 
   - Java 11
   - Maven
@@ -37,10 +58,10 @@ API de lives.postman_collection.json
 ```
 Import o arquivo no postman para acessar as collections.
 
-### Acesso a cobertura de testes do Jacoco:
+# Autor
 
-Acesse o arquivo ```index.html``` do Jacoco:
-```
-target/site/jacoco/index.html
-```
-Depois execute o arquivo em um browser de sua preferência.
+Jéssika Fernandes
+
+https://www.linkedin.com/in/ajessikafernandes/
+
+
